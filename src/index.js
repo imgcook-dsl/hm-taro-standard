@@ -267,7 +267,7 @@ module.exports = function(schema, option) {
         const methods = [];
         const init = [];
         const render = [`render(){ return (`];
-        let classData = [`class ${schema.componentName}_${classes.length} extends Component {`];
+        let classData = [`class ${schema.componentName} extends Component {`];
 
         if (schema.state) {
           states.push(`state = ${toString(schema.state)}`);
@@ -350,12 +350,12 @@ module.exports = function(schema, option) {
         panelValue: prettier.format(`
           'use strict';
 
-          import React, { Component } from 'react';
+          import Taro, {Component} from "@tarojs/taro";
           ${imports.join('\n')}
           import styles from './style.js';
           ${utils.join('\n')}
           ${classes.join('\n')}
-          export default ${schema.componentName}_0;
+          export default ${schema.componentName};
         `, prettierOpt),
         panelType: 'js',
       },

@@ -1,13 +1,13 @@
 'use strict';
 
-import React, { Component } from 'react';
+import Taro, { Component } from '@tarojs/taro';
 import { fetch } from 'whatwg-fetch';
 import jsonp from 'fetch-jsonp';
 import styles from './style.js';
 const print = function(value) {
   console.log(value);
 };
-class Page_0 extends Component {
+class Page extends Component {
   state = {
     data: [
       {
@@ -113,4 +113,4 @@ class Page_0 extends Component {
     );
   }
 }
-export default Page_0;
+export default Page;
