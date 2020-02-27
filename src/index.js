@@ -186,7 +186,7 @@ module.exports = function(schema, option) {
 
     // add loop key
     const tagEnd = render.match(/^<.+?\s/)[0].length;
-    render = `${render.slice(0, tagEnd)} key={${loopArgIndex}}${render.slice(tagEnd)}`;
+    // render = `${render.slice(0, tagEnd)} key={${loopArgIndex}}${render.slice(tagEnd)}`;
 
     // remove `this` 
     const re = new RegExp(`this.${loopArgItem}`, 'g')

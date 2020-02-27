@@ -42,7 +42,6 @@ class Page extends Component {
         {this.state.data.map((item, index) => {
           return (
             <div
-              key={index}
               onClick={e => {
                 window.open(item.url, '_blank');
               }}
