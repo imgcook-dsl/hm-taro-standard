@@ -280,22 +280,22 @@ module.exports = function(schema, option) {
           });
         }
 
-        if (schema.dataSource && Array.isArray(schema.dataSource.list)) {
-          schema.dataSource.list.forEach((item) => {
-            if (typeof item.isInit === 'boolean' && item.isInit) {
-              init.push(`this.${item.id}();`)
-            } else if (typeof item.isInit === 'string') {
-              init.push(`if (${parseProps(item.isInit)}) { this.${item.id}(); }`)
-            }
-            methods.push(parseDataSource(item));
-          });
+        // if (schema.dataSource && Array.isArray(schema.dataSource.list)) {
+        //   schema.dataSource.list.forEach((item) => {
+        //     if (typeof item.isInit === 'boolean' && item.isInit) {
+        //       init.push(`this.${item.id}();`)
+        //     } else if (typeof item.isInit === 'string') {
+        //       init.push(`if (${parseProps(item.isInit)}) { this.${item.id}(); }`)
+        //     }
+        //     // methods.push(parseDataSource(item));
+        //   });
 
-          if (schema.dataSource.dataHandler) {
-            const { params, content } = parseFunction(schema.dataSource.dataHandler);
-            methods.push(`dataHandler(${params}) {${content}}`);
-            init.push(`this.dataHandler()`);
-          }
-        }
+        //   if (schema.dataSource.dataHandler) {
+        //     const { params, content } = parseFunction(schema.dataSource.dataHandler);
+        //     methods.push(`dataHandler(${params}) {${content}}`);
+        //     init.push(`this.dataHandler()`);
+        //   }
+        // }
 
         if (schema.lifeCycles) {
           if (!schema.lifeCycles['_constructor']) {
