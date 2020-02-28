@@ -67,7 +67,8 @@ module.exports = function(schema, option) {
         case 'borderTopRightRadius':
         case 'borderTopLeftRadius':
         case 'borderRadius':
-          style[key] = (parseInt(style[key]) * 100 / (_w*750)).toFixed(2) + 'vw';
+          // style[key] = (parseInt(style[key]) * 100 / (_w*750)).toFixed(2) + 'vw';
+          style[key] = 'Taro.pxTransform(' + (parseInt(style[key]) / _w).toFixed(0) + ')px';
           break;
       }
     }
@@ -344,6 +345,13 @@ module.exports = function(schema, option) {
     singleQuote: true
   };
 
+  let css = `import Taro from '@tarojs/taro';
+  export default ${toString(style)}`;
+  
+  css = css.replace(/"Taro.pxTransform\(/g, 'Taro.pxTransform(');
+  css = css.replace(/\)px"/g, '\)');
+  console.log(css)
+
   return {
     panelDisplay: [
       {
@@ -356,13 +364,13 @@ module.exports = function(schema, option) {
           import styles from './style.js';
           ${utils.join('\n')}
           ${classes.join('\n')}
-          export default ${schema.componentName};
+          export default ${schema.componentName}; 
         `, prettierOpt),
         panelType: 'js',
       },
       {
         panelName: `style.js`,
-        panelValue: prettier.format(`export default ${toString(style)}`, prettierOpt),
+        panelValue: prettier.format(css, prettierOpt),
         panelType: 'js'
       }
     ],
