@@ -12,22 +12,13 @@ class HmNewsDetail extends Component {
     return (
       <View style={styles.hmNewsDetail}>
         <View style={styles.hd}>
-          <Image
-            style={styles.yunshu}
-            src={'https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/e8691a80583311ea9fc8bd65d7cec1a5.png'}
-          />
+          <Image style={styles.yunshu} src="http://img.haomo-studio.com/logo.png" />
           <View style={styles.container}>
             <View style={styles.outer}>
               <Text style={styles.author}>毫末科技</Text>
               <View style={styles.wrap}>
-                <Image
-                  style={styles.like}
-                  src={'https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/e8918a10583311eabb555f2886f52e85.png'}
-                />
-                <Image
-                  style={styles.share}
-                  src={'https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/e8bc1c80583311ea8651ad80c1bd5775.png'}
-                />
+                <Image style={styles.like} src="http://img.haomo-studio.com/logo.png" />
+                <Image style={styles.share} src="http://img.haomo-studio.com/logo.png" />
               </View>
             </View>
             <Text style={styles.time}>2 minutes ago</Text>
@@ -36,10 +27,7 @@ class HmNewsDetail extends Component {
         <Text style={styles.title}>如何用 Python 在笔记本上分析100GB 数据</Text>
         <View style={styles.main}>
           <View style={styles.entryPicWrap}>
-            <Image
-              style={styles.img}
-              src={'https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/ea36ae90583311eaa48ec157efa466c6.png'}
-            />
+            <Image style={styles.img} src="http://img.haomo-studio.com/logo.png" />
           </View>
         </View>
         <View style={styles.ft}>
