@@ -221,19 +221,19 @@ module.exports = function(schema, option) {
     switch(type) {
       case 'text':
         const innerText = parseProps(schema.props.text, true);
-        xml = `<span${classString}${props}>${innerText}</span>`;
+        xml = `<Text${classString}${props}>${innerText}</Text>`;
         break;
       case 'image':
         const source = parseProps(schema.props.src);
-        xml = `<img${classString}${props} src={${source}} />`;
+        xml = `<Image${classString}${props} src={${source}} />`;
         break;
       case 'div':
       case 'page':
       case 'block':
         if (schema.children && schema.children.length) {
-          xml = `<div${classString}${props}>${transform(schema.children)}</div>`;
+          xml = `<View${classString}${props}>${transform(schema.children)}</View>`;
         } else {
-          xml = `<div${classString}${props} />`;
+          xml = `<View${classString}${props} />`;
         }
         break;
     }
@@ -269,7 +269,7 @@ module.exports = function(schema, option) {
         const methods = [];
         const init = [];
         const render = [`render(){ return (`];
-        let classData = [`class ${schema.componentName} extends Component {`];
+        let classData = [`class ${_.upperFirst(_.camelCase(schema.props.className))} extends Component {`];
 
         if (schema.state) {
           states.push(`state = ${toString(schema.state)}`);
@@ -350,7 +350,6 @@ module.exports = function(schema, option) {
   
   css = css.replace(/"Taro.pxTransform\(/g, 'Taro.pxTransform(');
   css = css.replace(/\)px"/g, '\)');
-  console.log(css)
 
   return {
     panelDisplay: [
@@ -360,11 +359,12 @@ module.exports = function(schema, option) {
           'use strict';
 
           import Taro, {Component} from "@tarojs/taro";
+          import { View, Text, Image } from '@tarojs/components';
           ${imports.join('\n')}
           import styles from './style.js';
           ${utils.join('\n')}
           ${classes.join('\n')}
-          export default ${schema.componentName}; 
+          export default ${_.upperFirst(_.camelCase(schema.props.className))}; 
         `, prettierOpt),
         panelType: 'js',
       },
