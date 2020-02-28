@@ -7,10 +7,10 @@ import styles from './style.js';
 const print = function(value) {
   console.log(value);
 };
-class Page extends Component {
+class HmNewsDetail extends Component {
   render() {
     return (
-      <View style={styles.hm - news - detail}>
+      <View style={styles.hmNewsDetail}>
         <View style={styles.hd}>
           <Image
             style={styles.yunshu}
@@ -54,4 +54,4 @@ class Page extends Component {
     );
   }
 }
-export default Page;
+export default HmNewsDetail;

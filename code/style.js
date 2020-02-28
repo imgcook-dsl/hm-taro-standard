@@ -1,6 +1,6 @@
 import Taro from '@tarojs/taro';
 export default {
-  'hm-news-detail': {
+  hmNewsDetail: {
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',

@@ -1,5 +1,5 @@
 module.exports = function(schema, option) {
-  const {prettier} = option;
+  const {_, prettier} = option;
 
   // imports
   const imports = [];
@@ -203,10 +203,10 @@ module.exports = function(schema, option) {
   const generateRender = (schema) => {
     const type = schema.componentName.toLowerCase();
     const className = schema.props && schema.props.className;
-    const classString = className ? ` style={styles.${className}}` : '';
+    const classString = className ? ` style={styles.${_.camelCase(className)}}` : '';
 
     if (className) {
-      style[className] = parseStyle(schema.props.style);
+      style[_.camelCase(className)] = parseStyle(schema.props.style);
     }
 
     let xml;
