@@ -1,438 +1,367 @@
 module.exports = {
   "componentName": "Page",
-  "id": "Block_745855",
+  "id": "Shape_0",
+  "selfId": "95BB8A39-4410-41D3-8F1C-4A0B4F90E90E",
   "rect": {
     "x": 0,
     "y": 0,
-    "width": 342,
-    "height": 534
+    "width": 375,
+    "height": 614
   },
   "smart": {},
   "props": {
     "style": {
       "display": "flex",
-      "flexDirection": "row",
-      "justifyContent": "space-around",
       "alignItems": "flex-start",
-      "height": "534px"
+      "flexDirection": "column",
+      "backgroundColor": "#ffffff",
+      "width": "375px",
+      "height": "614px"
     },
-    "className": "box"
+    "className": "hm-news-detail"
   },
   "children": [{
     "componentName": "Div",
+    "id": "Block_984156",
+    "rect": {
+      "x": 0,
+      "y": 26,
+      "width": 374,
+      "height": 38
+    },
+    "smart": {},
     "props": {
-      "onClick": function onClick(e) {
-        window.open(this.item.url, '_blank')
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginTop": "26px",
+        "width": "374px"
       },
-      "data-url": "{{this.item.url}}",
-      "key": "{{this.item.index}}"
+      "className": "hd"
+    },
+    "children": [{
+      "componentName": "Image",
+      "id": "Image_3",
+      "selfId": "4AA31BF1-1B8F-420B-A8F8-15744704D491",
+      "rect": {
+        "x": 34,
+        "y": 26,
+        "width": 38,
+        "height": 38
+      },
+      "smart": {},
+      "props": {
+        "style": {
+          "width": "38px",
+          "height": "38px",
+          "filter": "drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.09))"
+        },
+        "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/e8691a80583311ea9fc8bd65d7cec1a5.png",
+        "className": "yunshu"
+      }
+    }, {
+      "componentName": "Div",
+      "id": "Block_918358",
+      "rect": {
+        "x": 82,
+        "y": 26,
+        "width": 254,
+        "height": 38
+      },
+      "smart": {},
+      "props": {
+        "style": {
+          "display": "flex",
+          "alignItems": "flex-start",
+          "flexDirection": "column",
+          "marginLeft": "10px",
+          "height": "38px"
+        },
+        "className": "container"
+      },
+      "children": [{
+        "componentName": "Div",
+        "id": "Block_537752",
+        "rect": {
+          "x": 82,
+          "y": 27,
+          "width": 255,
+          "height": 23
+        },
+        "smart": {},
+        "props": {
+          "style": {
+            "display": "flex",
+            "alignItems": "center",
+            "flexDirection": "row",
+            "justifyContent": "space-between",
+            "marginTop": "1px",
+            "width": "255px",
+            "height": "23px"
+          },
+          "className": "outer"
+        },
+        "children": [{
+          "componentName": "Text",
+          "id": "Text_2_0",
+          "selfId": "7AF7F8AC-DF3B-4894-A243-0ED7834F9A120",
+          "rect": {
+            "x": 82,
+            "y": 27,
+            "width": 64,
+            "height": 22
+          },
+          "smart": {},
+          "props": {
+            "style": {
+              "maxWidth": "184px",
+              "height": "22px",
+              "overflow": "hidden",
+              "textOverflow": "ellipsis",
+              "lineHeight": "22px",
+              "whiteSpace": "nowrap",
+              "color": "#000000",
+              "fontSize": "16px",
+              "fontWeight": 400
+            },
+            "text": "毫末科技",
+            "className": "author"
+          }
+        }, {
+          "componentName": "Div",
+          "id": "Block_472605",
+          "rect": {
+            "x": 276,
+            "y": 27,
+            "width": 59,
+            "height": 17
+          },
+          "smart": {},
+          "props": {
+            "style": {
+              "display": "flex",
+              "alignItems": "flex-start",
+              "flexDirection": "row",
+              "marginTop": "6px",
+              "height": "17px"
+            },
+            "className": "wrap"
+          },
+          "children": [{
+            "componentName": "Image",
+            "id": "Image_5",
+            "selfId": "4D48BFBA-2BEF-4D87-8C9F-4DDEE53299B4",
+            "rect": {
+              "x": 276,
+              "y": 33,
+              "width": 19,
+              "height": 17
+            },
+            "smart": {},
+            "props": {
+              "style": {
+                "opacity": 0.5,
+                "width": "19px",
+                "height": "17px"
+              },
+              "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/e8918a10583311eabb555f2886f52e85.png",
+              "className": "like"
+            }
+          }, {
+            "componentName": "Image",
+            "id": "Image_6",
+            "selfId": "9C0B1CBD-4505-4A69-B70C-5E21BBA61CCE",
+            "rect": {
+              "x": 321,
+              "y": 34,
+              "width": 15,
+              "height": 15
+            },
+            "smart": {},
+            "props": {
+              "style": {
+                "opacity": 0.5,
+                "marginLeft": "26px",
+                "width": "15px",
+                "height": "15px"
+              },
+              "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/e8bc1c80583311ea8651ad80c1bd5775.png",
+              "className": "share"
+            }
+          }]
+        }]
+      }, {
+        "componentName": "Text",
+        "id": "Text_4_0",
+        "selfId": "86260F5B-086D-4468-8FA1-04EC9A21019D0",
+        "rect": {
+          "x": 82,
+          "y": 50,
+          "width": 76,
+          "height": 14
+        },
+        "smart": {},
+        "props": {
+          "style": {
+            "opacity": "0.60",
+            "maxWidth": "280px",
+            "height": "14px",
+            "overflow": "hidden",
+            "textOverflow": "ellipsis",
+            "lineHeight": "14px",
+            "whiteSpace": "pre",
+            "color": "#000000",
+            "fontFamily": "Helvetica",
+            "fontSize": "12px",
+            "fontWeight": "normal"
+          },
+          "text": "2 minutes ago",
+          "className": "time"
+        }
+      }]
+    }]
+  }, {
+    "componentName": "Text",
+    "id": "Text_7_0",
+    "selfId": "0F06E0CA-3571-427E-AE80-C361B19A2A020",
+    "rect": {
+      "x": 34,
+      "y": 82,
+      "width": 256,
+      "height": 50
+    },
+    "smart": {},
+    "props": {
+      "style": {
+        "marginTop": "18px",
+        "marginLeft": "34px",
+        "width": "256px",
+        "height": "50px",
+        "overflow": "hidden",
+        "textOverflow": "ellipsis",
+        "lineHeight": "25px",
+        "whiteSpace": "pre-wrap",
+        "color": "#000000",
+        "fontSize": "18px",
+        "fontWeight": 400
+      },
+      "text": "如何用 Python 在笔记本上分析100GB 数据",
+      "className": "title"
+    }
+  }, {
+    "componentName": "Div",
+    "id": "Block_210255",
+    "rect": {
+      "x": 0,
+      "y": 140,
+      "width": 374,
+      "height": 184
+    },
+    "smart": {},
+    "props": {
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginTop": "8px",
+        "width": "374px"
+      },
+      "className": "main"
     },
     "children": [{
       "componentName": "Div",
-      "id": "Block_644975",
+      "id": "Block_244597",
       "rect": {
-        "x": 0,
-        "y": 0,
-        "width": 342,
-        "height": 342
+        "x": 16,
+        "y": 140,
+        "width": 343,
+        "height": 184
       },
       "smart": {},
       "props": {
         "style": {
           "display": "flex",
           "position": "relative",
-          "alignItems": "flex-start",
-          "flexDirection": "row",
-          "opacity": "1.00",
-          "width": "342px",
-          "height": "342px"
-        },
-        "className": "bd"
-      },
-      "children": [{
-        "componentName": "Image",
-        "id": "Image_7",
-        "rect": {
-          "x": 0,
-          "y": 0,
-          "width": 342,
-          "height": 342
-        },
-        "smart": {},
-        "props": {
-          "style": {
-            "position": "absolute",
-            "top": "0px",
-            "left": "0px",
-            "width": "342px",
-            "height": "342px",
-            "overflow": "hidden"
-          },
-          "src": "https://img.alicdn.com/tfs/TB1bLoWoYH1gK0jSZFwXXc7aXXa-684-684.png",
-          "className": "layer"
-        }
-      }, {
-        "componentName": "Image",
-        "id": "Image_8",
-        "rect": {
-          "x": 0,
-          "y": 0,
-          "width": 342,
-          "height": 342
-        },
-        "smart": {},
-        "props": {
-          "style": {
-            "position": "absolute",
-            "top": "0px",
-            "left": "0px",
-            "opacity": "1.00",
-            "width": "342px",
-            "height": "342px"
-          },
-          "className": "bg",
-          "src": "{{this.item.coverImage}}"
-        }
-      }, {
-        "componentName": "Div",
-        "id": "Shape_9",
-        "rect": {
-          "x": 18,
-          "y": 18,
-          "width": 122,
-          "height": 30
-        },
-        "smart": {},
-        "props": {
-          "style": {
-            "boxSizing": "border-box",
-            "display": "flex",
-            "position": "relative",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "marginTop": "18px",
-            "marginLeft": "18px",
-            "borderRadius": "15px",
-            "backgroundColor": "rgba(0,0,0,0.40)",
-            "paddingRight": "9px",
-            "paddingLeft": "10px",
-            "height": "30px"
-          },
-          "className": "wrap"
-        },
-        "children": [{
-          "componentName": "Image",
-          "id": "Image_11",
-          "rect": {
-            "x": 28,
-            "y": 24,
-            "width": 14,
-            "height": 18
-          },
-          "smart": {},
-          "props": {
-            "style": {
-              "opacity": "1.00",
-              "width": "14px",
-              "height": "18px"
-            },
-            "src": "https://img.alicdn.com/tfs/TB1mtZRoVT7gK0jSZFpXXaTkpXa-28-36.png",
-            "className": "riverdinwei"
-          }
-        }, {
-          "componentName": "Text",
-          "id": "Text_10_0",
-          "rect": {
-            "x": 46,
-            "y": 22,
-            "width": 84,
-            "height": 22
-          },
-          "smart": {},
-          "props": {
-            "style": {
-              "marginLeft": "4px",
-              "height": "22px",
-              "fontWeight": 400,
-              "fontSize": "18px",
-              "color": "#ffffff",
-              "lineHeight": "22px",
-              "whiteSpace": "nowrap"
-            },
-            "text": "距离500m",
-            "className": "distance"
-          }
-        }]
-      }]
-    }, {
-      "componentName": "Div",
-      "id": "Shape_5",
-      "rect": {
-        "x": 0,
-        "y": 342,
-        "width": 342,
-        "height": 114
-      },
-      "smart": {},
-      "props": {
-        "style": {
-          "display": "flex",
-          "alignItems": "flex-start",
-          "flexDirection": "row",
-          "justifyContent": "center",
-          "backgroundColor": "#ffffff",
-          "width": "342px",
-          "height": "114px"
-        },
-        "className": "main"
-      },
-      "children": [{
-        "componentName": "Text",
-        "id": "Text_6_0",
-        "rect": {
-          "x": 18,
-          "y": 364,
-          "width": 300,
-          "height": 88
-        },
-        "smart": {},
-        "props": {
-          "style": {
-            "marginTop": "22px",
-            "width": "300px",
-            "height": "88px",
-            "fontWeight": 400,
-            "fontSize": "30px",
-            "color": "#333333",
-            "lineHeight": "44px",
-            "overflow": "hidden",
-            "textOverflow": "ellipsis"
-          },
-          "className": "title",
-          "text": "{{this.item.title}}"
-        }
-      }]
-    }, {
-      "componentName": "Div",
-      "id": "Shape_0",
-      "rect": {
-        "x": 0,
-        "y": 456,
-        "width": 342,
-        "height": 78
-      },
-      "smart": {},
-      "props": {
-        "style": {
-          "boxSizing": "border-box",
-          "display": "flex",
           "alignItems": "center",
           "flexDirection": "row",
-          "justifyContent": "space-between",
-          "borderBottomLeftRadius": "12px",
-          "borderBottomRightRadius": "12px",
-          "backgroundColor": "#ffffff",
-          "paddingRight": "17px",
-          "paddingLeft": "18px",
-          "width": "342px",
-          "height": "78px",
-          "overflow": "hidden"
+          "justifyContent": "center",
+          "width": "343px",
+          "height": "184px"
         },
-        "className": "ft"
+        "className": "entryPicWrap"
       },
       "children": [{
-        "componentName": "Div",
-        "id": "Block_788015",
+        "componentName": "Image",
+        "id": "Image_9",
+        "selfId": "28DC7EA1-74F2-40DD-BE52-89B2DB3AA10E",
         "rect": {
-          "x": 18,
-          "y": 480,
-          "width": 132,
-          "height": 30
+          "x": 16,
+          "y": 140,
+          "width": 343,
+          "height": 184
         },
         "smart": {},
         "props": {
           "style": {
-            "display": "flex",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": "30px"
+            "position": "relative",
+            "width": "343px",
+            "height": "184px",
+            "filter": "drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.05))"
           },
-          "className": "block"
-        },
-        "children": [{
-          "componentName": "Image",
-          "id": "Image_1",
-          "rect": {
-            "x": 18,
-            "y": 480,
-            "width": 30,
-            "height": 30
-          },
-          "smart": {},
-          "props": {
-            "style": {
-              "width": "30px",
-              "height": "30px"
-            },
-            "src": "https://img.alicdn.com/tfs/TB1OvsYoW61gK0jSZFlXXXDKFXa-60-60.png",
-            "className": "xianjin"
-          }
-        }, {
-          "componentName": "Text",
-          "id": "Text_2_0",
-          "rect": {
-            "x": 54,
-            "y": 481,
-            "width": 96,
-            "height": 28
-          },
-          "smart": {},
-          "props": {
-            "style": {
-              "marginLeft": "6px",
-              "height": "28px",
-              "fontWeight": 300,
-              "fontSize": "24px",
-              "color": "#666666",
-              "lineHeight": "28px",
-              "whiteSpace": "nowrap"
-            },
-            "className": "fashionHome",
-            "text": "{{this.item.user.userName}}"
-          }
-        }]
-      }, {
-        "componentName": "Div",
-        "id": "Block_615383",
-        "rect": {
-          "x": 261,
-          "y": 480,
-          "width": 63,
-          "height": 30
-        },
-        "smart": {},
-        "props": {
-          "style": {
-            "display": "flex",
-            "alignItems": "center",
-            "flexDirection": "row",
-            "height": "30px"
-          },
-          "className": "group"
-        },
-        "children": [{
-          "componentName": "Image",
-          "id": "Image_4",
-          "rect": {
-            "x": 261,
-            "y": 484,
-            "width": 22,
-            "height": 22
-          },
-          "smart": {},
-          "props": {
-            "style": {
-              "width": "22px",
-              "height": "22px"
-            },
-            "src": "https://img.alicdn.com/tfs/TB1arwYo7T2gK0jSZFkXXcIQFXa-46-44.png",
-            "className": "favorite"
-          }
-        }, {
-          "componentName": "Text",
-          "id": "Text_3_0",
-          "rect": {
-            "x": 288,
-            "y": 482,
-            "width": 36,
-            "height": 26
-          },
-          "smart": {},
-          "props": {
-            "style": {
-              "marginLeft": "5px",
-              "height": "26px",
-              "fontWeight": 400,
-              "fontSize": "22px",
-              "color": "#999999",
-              "lineHeight": "26px",
-              "whiteSpace": "nowrap"
-            },
-            "className": "num",
-            "text": "{{this.item.readCount}}"
-          }
-        }],
-        "condition": "{{this.isReadCountShow(this.item.readCount)}}"
-      }]
-    }],
-    "loopArgs": ["item", "index"],
-    "loop": "{{this.state.data}}"
-  }],
-  "fileName": "index",
-  "methods": {
-    "isReadCountShow": function isReadCountShow(readCount) {
-      return readCount > 300;
-    }
-  },
-  "lifeCycles": {
-    "_constructor": function constructor(props, context) {
-      console.log('super props');
-    },
-    "componentDidUpdate": (prevProps, prevState, snapshot) => {
-      
-    }
-  },
-  "dataSource": {
-    "list": [{
-      "id": "fetch_example",
-      "isInit": true,
-      "type": "fetch",
-      "options": {
-        "method": "GET",
-        "uri": "https://jsonplaceholder.typicode.com/todos/1",
-        "headers": {
-          "Content-Type": "json"
+          "src": "https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/ea36ae90583311eaa48ec157efa466c6.png",
+          "className": "img"
         }
+      }]
+    }]
+  }, {
+    "componentName": "Div",
+    "id": "Block_485340",
+    "rect": {
+      "x": 0,
+      "y": 349,
+      "width": 374,
+      "height": 248
+    },
+    "smart": {},
+    "props": {
+      "style": {
+        "display": "flex",
+        "flexDirection": "row",
+        "justifyContent": "center",
+        "marginTop": "25px",
+        "width": "374px"
       },
-      "dataHandler": function dataHandler(data, error) {
-        console.log('fetch example: ', data, error)
-        return data;
-      }
-    }, {
-      "id": "jsonp_example",
-      "isInit": true,
-      "type": "jsonp",
-      "options": {
-        "method": "GET",
-        "params": {},
-        "uri": "https://assets.airbnb.com/frontend/search_results.js",
-        "jsonpCallbackFunction": "search_results"
+      "className": "ft"
+    },
+    "children": [{
+      "componentName": "Text",
+      "id": "Text_8_0",
+      "selfId": "99CFCEB0-E59D-4137-A519-1B3AB4B027480",
+      "rect": {
+        "x": 18,
+        "y": 349,
+        "width": 335,
+        "height": 248
       },
-      "dataHandler": function dataHandler(data, error) {
-        console.log('jsonp example: ', data, error)
-        return data;
+      "smart": {},
+      "props": {
+        "style": {
+          "width": "335px",
+          "height": "248px",
+          "overflow": "hidden",
+          "textOverflow": "ellipsis",
+          "lineHeight": "31px",
+          "letterSpacing": "0px",
+          "whiteSpace": "pre-wrap",
+          "color": "#000000",
+          "fontSize": "18px",
+          "fontWeight": 400
+        },
+        "text": "第 1 种是对数据进行子抽样，但它有一个明显缺点：可能因忽略部分数据而错失关键信息，甚至误解数据表达的含义。第 2 种是使用分布式计算。虽然在某些情况下这是一种有效的方法，但是管理和维护集群会带来巨大开销。想象一下，要为一个刚超出内存大小、大概 30-50GB 的数据集就建立一套集群，对我来说，这似乎有点“用力过猛”。",
+        "className": "content"
       }
     }]
-  },
-  "state": {
-    "data": [{
-      "title": "小户型卫浴怎样才能装得高大上？",
-      "coverImage": "https://img.alicdn.com/tfs/TB1Txq6o7T2gK0jSZFkXXcIQFXa-684-684.png",
-      "readCount": 200,
-      "user": {
-        "userImage": "https://img.alicdn.com/tfs/TB1DWe6oYj1gK0jSZFOXXc7GpXa-60-60.png",
-        "userName": "时尚家居"
-      },
-      "url": "https://www.imgcook.com"
-    }, {
-      "title": "拥有超多功能的40平米简约小公寓了解一下",
-      "coverImage": "https://img.alicdn.com/tfs/TB1XRQTo7P2gK0jSZPxXXacQpXa-684-648.png",
-      "readCount": 500,
-      "user": {
-        "userImage": "https://img.alicdn.com/tfs/TB1DWe6oYj1gK0jSZFOXXc7GpXa-60-60.png",
-        "userName": "花花设计工作"
-      },
-      "url": "https://www.imgcook.com/docs"
-    }]
-  }
+  }],
+  "fileName": "index"
 }

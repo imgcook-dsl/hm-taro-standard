@@ -1,108 +1,97 @@
 export default {
-  box: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'space-around',
-    alignItems: 'flex-start',
-    height: '71.20vw'
-  },
-  bd: {
-    display: 'flex',
-    position: 'relative',
-    alignItems: 'flex-start',
-    flexDirection: 'row',
-    opacity: '1.00',
-    width: '45.60vw',
-    height: '45.60vw'
-  },
-  layer: {
-    position: 'absolute',
-    top: '0.00vw',
-    left: '0.00vw',
-    width: '45.60vw',
-    height: '45.60vw',
-    overflow: 'hidden'
-  },
-  bg: { position: 'absolute', top: '0.00vw', left: '0.00vw', opacity: '1.00', width: '45.60vw', height: '45.60vw' },
-  wrap: {
-    boxSizing: 'border-box',
-    display: 'flex',
-    position: 'relative',
-    alignItems: 'center',
-    flexDirection: 'row',
-    marginTop: '2.40vw',
-    marginLeft: '2.40vw',
-    borderRadius: '2.00vw',
-    backgroundColor: 'rgba(0,0,0,0.40)',
-    paddingRight: '1.20vw',
-    paddingLeft: '1.33vw',
-    height: '4.00vw'
-  },
-  riverdinwei: { opacity: '1.00', width: '1.87vw', height: '2.40vw' },
-  distance: {
-    marginLeft: '0.53vw',
-    height: '2.93vw',
-    fontWeight: 400,
-    fontSize: '2.40vw',
-    color: '#ffffff',
-    lineHeight: '2.93vw',
-    whiteSpace: 'nowrap'
-  },
-  main: {
+  'hm-news-detail': {
     display: 'flex',
     alignItems: 'flex-start',
-    flexDirection: 'row',
-    justifyContent: 'center',
+    flexDirection: 'column',
     backgroundColor: '#ffffff',
-    width: '45.60vw',
-    height: '15.20vw'
+    width: '100.00vw',
+    height: '163.73vw'
   },
-  title: {
-    marginTop: '2.93vw',
-    width: '40.00vw',
-    height: '11.73vw',
-    fontWeight: 400,
-    fontSize: '4.00vw',
-    color: '#333333',
-    lineHeight: '5.87vw',
-    overflow: 'hidden',
-    textOverflow: 'ellipsis'
+  hd: { display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '6.93vw', width: '99.73vw' },
+  yunshu: { width: '10.13vw', height: '10.13vw', filter: 'drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.09))' },
+  container: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    flexDirection: 'column',
+    marginLeft: '2.67vw',
+    height: '10.13vw'
   },
-  ft: {
-    boxSizing: 'border-box',
+  outer: {
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    borderBottomLeftRadius: '1.60vw',
-    borderBottomRightRadius: '1.60vw',
-    backgroundColor: '#ffffff',
-    paddingRight: '2.27vw',
-    paddingLeft: '2.40vw',
-    width: '45.60vw',
-    height: '10.40vw',
-    overflow: 'hidden'
+    marginTop: '0.27vw',
+    width: '68.00vw',
+    height: '6.13vw'
   },
-  block: { display: 'flex', alignItems: 'center', flexDirection: 'row', height: '4.00vw' },
-  xianjin: { width: '4.00vw', height: '4.00vw' },
-  fashionHome: {
-    marginLeft: '0.80vw',
+  author: {
+    maxWidth: '49.07vw',
+    height: '5.87vw',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    lineHeight: '5.87vw',
+    whiteSpace: 'nowrap',
+    color: '#000000',
+    fontSize: '4.27vw',
+    fontWeight: 400
+  },
+  wrap: { display: 'flex', alignItems: 'flex-start', flexDirection: 'row', marginTop: '1.60vw', height: '4.53vw' },
+  like: { opacity: 0.5, width: '5.07vw', height: '4.53vw' },
+  share: { opacity: 0.5, marginLeft: '6.93vw', width: '4.00vw', height: '4.00vw' },
+  time: {
+    opacity: '0.60',
+    maxWidth: '74.67vw',
     height: '3.73vw',
-    fontWeight: 300,
-    fontSize: '3.20vw',
-    color: '#666666',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
     lineHeight: '3.73vw',
-    whiteSpace: 'nowrap'
+    whiteSpace: 'pre',
+    color: '#000000',
+    fontFamily: 'Helvetica',
+    fontSize: '3.20vw',
+    fontWeight: 'normal'
   },
-  group: { display: 'flex', alignItems: 'center', flexDirection: 'row', height: '4.00vw' },
-  favorite: { width: '2.93vw', height: '2.93vw' },
-  num: {
-    marginLeft: '0.67vw',
-    height: '3.47vw',
-    fontWeight: 400,
-    fontSize: '2.93vw',
-    color: '#999999',
-    lineHeight: '3.47vw',
-    whiteSpace: 'nowrap'
+  title: {
+    marginTop: '4.80vw',
+    marginLeft: '9.07vw',
+    width: '68.27vw',
+    height: '13.33vw',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    lineHeight: '6.67vw',
+    whiteSpace: 'pre-wrap',
+    color: '#000000',
+    fontSize: '4.80vw',
+    fontWeight: 400
+  },
+  main: { display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '2.13vw', width: '99.73vw' },
+  entryPicWrap: {
+    display: 'flex',
+    position: 'relative',
+    alignItems: 'center',
+    flexDirection: 'row',
+    justifyContent: 'center',
+    width: '91.47vw',
+    height: '49.07vw'
+  },
+  img: {
+    position: 'relative',
+    width: '91.47vw',
+    height: '49.07vw',
+    filter: 'drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.05))'
+  },
+  ft: { display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '6.67vw', width: '99.73vw' },
+  content: {
+    width: '89.33vw',
+    height: '66.13vw',
+    overflow: 'hidden',
+    textOverflow: 'ellipsis',
+    lineHeight: '8.27vw',
+    letterSpacing: '0px',
+    whiteSpace: 'pre-wrap',
+    color: '#000000',
+    fontSize: '4.80vw',
+    fontWeight: 400
   }
 };

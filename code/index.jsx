@@ -7,82 +7,48 @@ const print = function(value) {
   console.log(value);
 };
 class Page extends Component {
-  state = {
-    data: [
-      {
-        title: '小户型卫浴怎样才能装得高大上？',
-        coverImage: 'https://img.alicdn.com/tfs/TB1Txq6o7T2gK0jSZFkXXcIQFXa-684-684.png',
-        readCount: 200,
-        user: { userImage: 'https://img.alicdn.com/tfs/TB1DWe6oYj1gK0jSZFOXXc7GpXa-60-60.png', userName: '时尚家居' },
-        url: 'https://www.imgcook.com'
-      },
-      {
-        title: '拥有超多功能的40平米简约小公寓了解一下',
-        coverImage: 'https://img.alicdn.com/tfs/TB1XRQTo7P2gK0jSZPxXXacQpXa-684-648.png',
-        readCount: 500,
-        user: {
-          userImage: 'https://img.alicdn.com/tfs/TB1DWe6oYj1gK0jSZFOXXc7GpXa-60-60.png',
-          userName: '花花设计工作'
-        },
-        url: 'https://www.imgcook.com/docs'
-      }
-    ]
-  };
-  constructor(props, context) {
-    super();
-    console.log('super props');
-  }
-  componentDidUpdate(prevProps, prevState, snapshot) {}
-  isReadCountShow(readCount) {
-    return readCount > 300;
-  }
   render() {
     return (
-      <div style={styles.box}>
-        {this.state.data.map((item, index) => {
-          return (
-            <div
-              onClick={e => {
-                window.open(item.url, '_blank');
-              }}
-              data-url={item.url}
-              key={item.index}
-            >
-              <div style={styles.bd}>
-                <img style={styles.layer} src={'https://img.alicdn.com/tfs/TB1bLoWoYH1gK0jSZFwXXc7aXXa-684-684.png'} />
-                <img style={styles.bg} src={item.coverImage} />
-                <div style={styles.wrap}>
-                  <img
-                    style={styles.riverdinwei}
-                    src={'https://img.alicdn.com/tfs/TB1mtZRoVT7gK0jSZFpXXaTkpXa-28-36.png'}
-                  />
-                  <span style={styles.distance}>距离500m</span>
-                </div>
-              </div>
-              <div style={styles.main}>
-                <span style={styles.title}>{item.title}</span>
-              </div>
-              <div style={styles.ft}>
-                <div style={styles.block}>
-                  <img
-                    style={styles.xianjin}
-                    src={'https://img.alicdn.com/tfs/TB1OvsYoW61gK0jSZFlXXXDKFXa-60-60.png'}
-                  />
-                  <span style={styles.fashionHome}>{item.user.userName}</span>
-                </div>
-                {this.isReadCountShow(item.readCount) && (
-                  <div style={styles.group}>
-                    <img
-                      style={styles.favorite}
-                      src={'https://img.alicdn.com/tfs/TB1arwYo7T2gK0jSZFkXXcIQFXa-46-44.png'}
-                    />
-                    <span style={styles.num}>{item.readCount}</span>
-                  </div>
-                )}
+      <div style={styles.hm - news - detail}>
+        <div style={styles.hd}>
+          <img
+            style={styles.yunshu}
+            src={'https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/e8691a80583311ea9fc8bd65d7cec1a5.png'}
+          />
+          <div style={styles.container}>
+            <div style={styles.outer}>
+              <span style={styles.author}>毫末科技</span>
+              <div style={styles.wrap}>
+                <img
+                  style={styles.like}
+                  src={'https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/e8918a10583311eabb555f2886f52e85.png'}
+                />
+                <img
+                  style={styles.share}
+                  src={'https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/e8bc1c80583311ea8651ad80c1bd5775.png'}
+                />
               </div>
             </div>
-          );
-        })}
+            <span style={styles.time}>2 minutes ago</span>
+          </div>
+        </div>
+        <span style={styles.title}>如何用 Python 在笔记本上分析100GB 数据</span>
+        <div style={styles.main}>
+          <div style={styles.entryPicWrap}>
+            <img
+              style={styles.img}
+              src={'https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/ea36ae90583311eaa48ec157efa466c6.png'}
+            />
+          </div>
+        </div>
+        <div style={styles.ft}>
+          <span style={styles.content}>
+            第 1 种是对数据进行子抽样，但它有一个明显缺点：可能因忽略部分数据而错失关键信息，甚至误解数据表达的含义。第
+            2
+            种是使用分布式计算。虽然在某些情况下这是一种有效的方法，但是管理和维护集群会带来巨大开销。想象一下，要为一个刚超出内存大小、大概
+            30-50GB 的数据集就建立一套集群，对我来说，这似乎有点“用力过猛”。
+          </span>
+        </div>
       </div>
     );
   }

@@ -14,7 +14,8 @@ module.exports = function(schema, option) {
   const classes = [];
 
   // 1vw = width / 100
-  const _w = option.responsive.width / 100;
+  const _w = schema.rect.width / 750;
+  console.log('_w: ', _w);
 
   const isExpression = (value) => {
     return /^\{\{.*\}\}$/.test(value);
@@ -40,7 +41,7 @@ module.exports = function(schema, option) {
     return String(value);
   };
 
-  // convert to responsive unit, such as vw
+  // convert to responsive unit, such as rpx
   const parseStyle = (style) => {
     for (let key in style) {
       switch (key) {
@@ -66,7 +67,7 @@ module.exports = function(schema, option) {
         case 'borderTopRightRadius':
         case 'borderTopLeftRadius':
         case 'borderRadius':
-          style[key] = (parseInt(style[key]) / _w).toFixed(2) + 'vw';
+          style[key] = (parseInt(style[key]) * 100 / (_w*750)).toFixed(2) + 'vw';
           break;
       }
     }
