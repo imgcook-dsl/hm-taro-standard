@@ -366,7 +366,7 @@ module.exports = function(schema, option) {
           ${classes.join('\n')}
           export default ${_.upperFirst(_.camelCase(schema.props.className))}; 
         `, prettierOpt),
-        panelType: 'js',
+        panelType: 'jsx',
       },
       {
         panelName: `style.js`,
