@@ -245,14 +245,19 @@ module.exports = function(schema, option) {
       case 'div':
       case 'page':
       case 'block':
-        if (schema.props['hm-component']) {
-          xml = `<View class="${schema.props.className}">{"hm-component=${schema.props['hm-component']}"}</View>`
+        // if (schema.props['hm-component']) {
+        //   xml = `<View class="${schema.props.className}">{"hm-component=${schema.props['hm-component']}"}</View>`
+        // } else {
+        //   if (schema.children && schema.children.length) {
+        //     xml = `<View${classString}${props}>${transform(schema.children)}</View>`;
+        //   } else {
+        //     xml = `<View${classString}${props} />`;
+        //   }
+        // }
+        if (schema.children && schema.children.length) {
+          xml = `<View${classString}${props}>${transform(schema.children)}</View>`;
         } else {
-          if (schema.children && schema.children.length) {
-            xml = `<View${classString}${props}>${transform(schema.children)}</View>`;
-          } else {
-            xml = `<View${classString}${props} />`;
-          }
+          xml = `<View${classString}${props} />`;
         }
         break;
     }
