@@ -147,7 +147,8 @@ module.exports = {
               "marginTop": "6px",
               "height": "17px"
             },
-            "className": "wrap"
+            "className": "wrap",
+            "hm-component": "van-field"
           },
           "children": [{
             "componentName": "Image",

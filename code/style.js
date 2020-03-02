@@ -38,8 +38,6 @@ export default {
     fontWeight: 400
   },
   wrap: { display: 'flex', alignItems: 'flex-start', flexDirection: 'row', marginTop: '1.60vw', height: '4.53vw' },
-  like: { opacity: 0.5, width: '5.07vw', height: '4.53vw' },
-  share: { opacity: 0.5, marginLeft: '6.93vw', width: '4.00vw', height: '4.00vw' },
   time: {
     opacity: '0.60',
     maxWidth: '74.67vw',

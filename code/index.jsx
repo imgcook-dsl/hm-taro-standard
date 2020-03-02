@@ -11,8 +11,6 @@ class HmNewsDetail extends Component {
     let defaultState = {
       yunshu: "'https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/e8691a80583311ea9fc8bd65d7cec1a5.png'",
       author: '毫末科技',
-      like: "'https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/e8918a10583311eabb555f2886f52e85.png'",
-      share: "'https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/e8bc1c80583311ea8651ad80c1bd5775.png'",
       time: '2 minutes ago',
       title: '如何用 Python 在笔记本上分析100GB 数据',
       img: "'https://ai-sample.oss-cn-hangzhou.aliyuncs.com/test/ea36ae90583311eaa48ec157efa466c6.png'",
@@ -30,10 +28,7 @@ class HmNewsDetail extends Component {
           <View style={styles.container}>
             <View style={styles.outer}>
               <Text style={styles.author}>{this.state.author}</Text>
-              <View style={styles.wrap}>
-                <Image style={styles.like} src={this.state.like} />
-                <Image style={styles.share} src={this.state.share} />
-              </View>
+              <View class="wrap">{'hm-component=van-field'}</View>
             </View>
             <Text style={styles.time}>{this.state.time}</Text>
           </View>
