@@ -27,9 +27,6 @@ co(function*() {
       viewportWidth: 375
     },
     utils: {
-      print: function(value) {
-        console.log(value);
-      }
     }
   });
 

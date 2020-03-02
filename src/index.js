@@ -13,6 +13,9 @@ module.exports = function(schema, option) {
   // Classes 
   const classes = [];
 
+  // 组件的states
+  const renderStates = {};
+
   // 1vw = width / 100
   const _w = schema.rect.width / 750;
   console.log('_w: ', _w);
@@ -221,11 +224,13 @@ module.exports = function(schema, option) {
     switch(type) {
       case 'text':
         const innerText = parseProps(schema.props.text, true);
-        xml = `<Text${classString}${props}>${innerText}</Text>`;
+        renderStates[_.camelCase(schema.props.className)] = innerText;
+        xml = `<Text${classString}${props}>{this.state.${_.camelCase(schema.props.className)}}</Text>`;
         break;
       case 'image':
         const source = parseProps(schema.props.src);
-        xml = `<Image${classString}${props} src={${source}} />`;
+        renderStates[_.camelCase(schema.props.className)] = source;
+        xml = `<Image${classString}${props} src={this.state.${_.camelCase(schema.props.className)}} />`;
         break;
       case 'div':
       case 'page':
@@ -269,7 +274,6 @@ module.exports = function(schema, option) {
         const methods = [];
         const init = [];
         const render = [`render(){ return (`];
-        let classData = [`class ${_.upperFirst(_.camelCase(schema.props.className))} extends Component {`];
 
         if (schema.state) {
           states.push(`state = ${toString(schema.state)}`);
@@ -318,6 +322,13 @@ module.exports = function(schema, option) {
         render.push(generateRender(schema))
         render.push(`);}`);
 
+        let classData = [`class ${_.upperFirst(_.camelCase(schema.props.className))} extends Component {
+          constructor (props) {
+            super(props)
+            let defaultState = ${JSON.stringify(renderStates)};
+            this.state = Object.assign(defaultState, JSON.parse(JSON.stringify(props)));
+          }
+          `];
         classData = classData.concat(states).concat(lifeCycles).concat(methods).concat(render);
         classData.push('}');
 
