@@ -24,7 +24,7 @@ class HmNewsDetail extends Component {
 
   render() {
     return (
-      <View style={styles.hmNewsDetail}>
+      <View style={styles.hmNewsDetail} responsive={'vw'}>
         <View style={styles.hd}>
           <Image style={styles.yunshu} src={this.state.yunshu} />
           <View style={styles.container}>

@@ -17,8 +17,13 @@ module.exports = function(schema, option) {
   const renderStates = {};
 
   // 1vw = width / 100
-  const _w = schema.rect.width / 750;
+  const _w = 750/schema.rect.width;
   console.log('_w: ', _w);
+
+  // 如果组件配置了属性responsive==vw，则返回true
+  const isResponsiveVW = () => {
+    return schema.props.responsive == 'vw';
+  }
 
   const isExpression = (value) => {
     return /^\{\{.*\}\}$/.test(value);
@@ -71,7 +76,12 @@ module.exports = function(schema, option) {
         case 'borderTopLeftRadius':
         case 'borderRadius':
           // style[key] = (parseInt(style[key]) * 100 / (_w*750)).toFixed(2) + 'vw';
-          style[key] = 'Taro.pxTransform(' + (parseInt(style[key]) / _w).toFixed(0) + ')px';
+          // 如果组件配置了属性responsive==vw，那么使用vw单位.
+          if (isResponsiveVW()) {
+            style[key] = ((parseInt(style[key]) * _w * 100)/750).toFixed(2) + 'vw';
+          } else  {
+            style[key] = 'Taro.pxTransform(' + (parseInt(style[key]) * _w).toFixed(0) + ')px';
+          }
           break;
       }
     }

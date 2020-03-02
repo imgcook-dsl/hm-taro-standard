@@ -5,122 +5,94 @@ export default {
     alignItems: 'flex-start',
     flexDirection: 'column',
     backgroundColor: '#ffffff',
-    width: Taro.pxTransform(750),
-    height: Taro.pxTransform(1228)
+    width: '100.00vw',
+    height: '163.73vw'
   },
-  hd: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    marginTop: Taro.pxTransform(52),
-    width: Taro.pxTransform(748)
-  },
-  yunshu: {
-    width: Taro.pxTransform(76),
-    height: Taro.pxTransform(76),
-    filter: 'drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.09))'
-  },
+  hd: { display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '6.93vw', width: '99.73vw' },
+  yunshu: { width: '10.13vw', height: '10.13vw', filter: 'drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.09))' },
   container: {
     display: 'flex',
     alignItems: 'flex-start',
     flexDirection: 'column',
-    marginLeft: Taro.pxTransform(20),
-    height: Taro.pxTransform(76)
+    marginLeft: '2.67vw',
+    height: '10.13vw'
   },
   outer: {
     display: 'flex',
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'space-between',
-    marginTop: Taro.pxTransform(2),
-    width: Taro.pxTransform(510),
-    height: Taro.pxTransform(46)
+    marginTop: '0.27vw',
+    width: '68.00vw',
+    height: '6.13vw'
   },
   author: {
-    maxWidth: Taro.pxTransform(368),
-    height: Taro.pxTransform(44),
+    maxWidth: '49.07vw',
+    height: '5.87vw',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    lineHeight: Taro.pxTransform(44),
+    lineHeight: '5.87vw',
     whiteSpace: 'nowrap',
     color: '#000000',
-    fontSize: Taro.pxTransform(32),
+    fontSize: '4.27vw',
     fontWeight: 400
   },
-  wrap: {
-    display: 'flex',
-    alignItems: 'flex-start',
-    flexDirection: 'row',
-    marginTop: Taro.pxTransform(12),
-    height: Taro.pxTransform(34)
-  },
-  like: { opacity: 0.5, width: Taro.pxTransform(38), height: Taro.pxTransform(34) },
-  share: { opacity: 0.5, marginLeft: Taro.pxTransform(52), width: Taro.pxTransform(30), height: Taro.pxTransform(30) },
+  wrap: { display: 'flex', alignItems: 'flex-start', flexDirection: 'row', marginTop: '1.60vw', height: '4.53vw' },
+  like: { opacity: 0.5, width: '5.07vw', height: '4.53vw' },
+  share: { opacity: 0.5, marginLeft: '6.93vw', width: '4.00vw', height: '4.00vw' },
   time: {
     opacity: '0.60',
-    maxWidth: Taro.pxTransform(560),
-    height: Taro.pxTransform(28),
+    maxWidth: '74.67vw',
+    height: '3.73vw',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    lineHeight: Taro.pxTransform(28),
+    lineHeight: '3.73vw',
     whiteSpace: 'pre',
     color: '#000000',
     fontFamily: 'Helvetica',
-    fontSize: Taro.pxTransform(24),
+    fontSize: '3.20vw',
     fontWeight: 'normal'
   },
   title: {
-    marginTop: Taro.pxTransform(36),
-    marginLeft: Taro.pxTransform(68),
-    width: Taro.pxTransform(512),
-    height: Taro.pxTransform(100),
+    marginTop: '4.80vw',
+    marginLeft: '9.07vw',
+    width: '68.27vw',
+    height: '13.33vw',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    lineHeight: Taro.pxTransform(50),
+    lineHeight: '6.67vw',
     whiteSpace: 'pre-wrap',
     color: '#000000',
-    fontSize: Taro.pxTransform(36),
+    fontSize: '4.80vw',
     fontWeight: 400
   },
-  main: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    marginTop: Taro.pxTransform(16),
-    width: Taro.pxTransform(748)
-  },
+  main: { display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '2.13vw', width: '99.73vw' },
   entryPicWrap: {
     display: 'flex',
     position: 'relative',
     alignItems: 'center',
     flexDirection: 'row',
     justifyContent: 'center',
-    width: Taro.pxTransform(686),
-    height: Taro.pxTransform(368)
+    width: '91.47vw',
+    height: '49.07vw'
   },
   img: {
     position: 'relative',
-    width: Taro.pxTransform(686),
-    height: Taro.pxTransform(368),
+    width: '91.47vw',
+    height: '49.07vw',
     filter: 'drop-shadow(0px 0px 20px rgba(0, 0, 0, 0.05))'
   },
-  ft: {
-    display: 'flex',
-    flexDirection: 'row',
-    justifyContent: 'center',
-    marginTop: Taro.pxTransform(50),
-    width: Taro.pxTransform(748)
-  },
+  ft: { display: 'flex', flexDirection: 'row', justifyContent: 'center', marginTop: '6.67vw', width: '99.73vw' },
   content: {
-    width: Taro.pxTransform(670),
-    height: Taro.pxTransform(496),
+    width: '89.33vw',
+    height: '66.13vw',
     overflow: 'hidden',
     textOverflow: 'ellipsis',
-    lineHeight: Taro.pxTransform(62),
+    lineHeight: '8.27vw',
     letterSpacing: '0px',
     whiteSpace: 'pre-wrap',
     color: '#000000',
-    fontSize: Taro.pxTransform(36),
+    fontSize: '4.80vw',
     fontWeight: 400
   }
 };
